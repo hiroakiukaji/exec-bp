@@ -2,8 +2,6 @@
 
 set -e
 
-build_dir=$1
-
 cd $1
-ls
+
 ./.exec.sh

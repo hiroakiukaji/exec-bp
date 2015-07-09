@@ -2,4 +2,8 @@
 
 set -e
 
-./$1/.exec.sh
+cd $1
+
+./.exec.sh
+
+cd -

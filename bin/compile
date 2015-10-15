@@ -2,15 +2,11 @@
 
 set -e
 
-pwd;find . | sort | sed '1d;s/^\.//g;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+mkdir -p "$1" "$2"
+build=$(cd "$1/" && pwd)
+cache=$(cd "$2/" && pwd)
+buildpack=$(cd "$(dirname $0)/.." && pwd)
 
-echo $1
-
-echo $2
-
-echo $3
-
-cd $1
-
-
-cd -
+echo build
+echo cache
+echo buildpack

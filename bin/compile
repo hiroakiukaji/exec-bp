@@ -4,6 +4,12 @@ set -e
 
 pwd;find . | sort | sed '1d;s/^\.//g;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
 
+echo $1
+
+echo $2
+
+echo $3
+
 cd $1
 
 
